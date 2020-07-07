@@ -11,6 +11,8 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+
+    TextMesh t;
     public Text countText1;
     public Text palin;
     public Text countText;
@@ -39,19 +41,23 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        string palString = other.GetComponentInChildren<TextMesh>().text;
-        bool flg = IsPalindrome(palString);
-        if (flg.Equals(true) && other.gameObject.CompareTag("Pick Up"))
-        {
-            other.gameObject.SetActive(false);
-            count = count + 1;
-            palin.text = "eaten palindrom:" + count.ToString();
-            SetCountText();
-            source.Play();
+        t = GameObject.Find("Pick Up").GetComponentInChildren<TextMesh>();
+        string palString = t.text;
+      
+            bool flg = IsPalindrome(palString);
 
+
+            if (flg.Equals(true) && other.gameObject.CompareTag("Pick Up"))
+            {
+                other.gameObject.SetActive(false);
+                count = count + 1;
+                palin.text = "eaten palindrom:" + count.ToString();
+                SetCountText();
+                source.Play();
+            
+            
         }
     }
-
     void SetCountText()
     {
         countText.text = "Total Palindrome: " + count.ToString();

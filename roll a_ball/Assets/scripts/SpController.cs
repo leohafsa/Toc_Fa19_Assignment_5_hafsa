@@ -10,6 +10,7 @@ public class SpController : MonoBehaviour
     public Vector3 value;
     public float mWait;
     public float wait;
+    public int counter;
     public float lWait;
     public bool stop;
     public int sWait;
@@ -66,16 +67,19 @@ public class SpController : MonoBehaviour
         randomString = "";
 
         string[] characters = new string[] { "x", "h", "1" };
-        if (randomNumber == 1)
+        if (countPalindrome <= 10)
         {
-            Text.text = GeneratePalindrome(characters);
-            countPalindrome = countPalindrome + 1;
-            palindrometext.text = countPalindrome.ToString();
+            if (randomNumber == 1)
+            {
+                Text.text = GeneratePalindrome(characters);
+                countPalindrome = countPalindrome + 1;
+                palindrometext.text = countPalindrome.ToString();
 
-        }
-        else
-        {
-            Text.text = GenerateRandomString(characters);
+            }
+            else
+            {
+                Text.text = GenerateRandomString(characters);
+            }
         }
     }
 

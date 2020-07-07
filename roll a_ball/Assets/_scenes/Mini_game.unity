@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657928, g: 0.49641335, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97687738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7, y: 0.5, z: 0}
+  m_LocalPosition: {x: -8.7, y: 2.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -979,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511244496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.51, y: -0.49, z: 6.98}
+  m_LocalPosition: {x: -1.5, y: -0.49, z: 1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2406,6 +2406,7 @@ MonoBehaviour:
   value: {x: -8, y: 0, z: -9}
   mWait: 0
   wait: 0
+  counter: 0
   lWait: 0
   stop: 0
   sWait: 0
@@ -2424,7 +2425,7 @@ MonoBehaviour:
   Text: {fileID: 1798882776}
   thestringlength: 0
   countPalindrome: 0
-  palindrometext: {fileID: 0}
+  palindrometext: {fileID: 1407463332}
 --- !u!4 &1451114002
 Transform:
   m_ObjectHideFlags: 0
@@ -2711,7 +2712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658674001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.74, y: -3.34, z: 4.54}
+  m_LocalPosition: {x: -4.74, y: -3.34, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3376,7 +3377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062880288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.69, y: -0.49, z: -6.48}
+  m_LocalPosition: {x: -5.8, y: -0.49, z: -6.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3542,6 +3543,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2184984619462366163, guid: bdc72ef485dff9c4dbebb622b2f3346d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2184984619462366173, guid: bdc72ef485dff9c4dbebb622b2f3346d,
         type: 3}
       propertyPath: m_LineSpacing
@@ -3551,6 +3557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CharacterSize
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184984619912353405, guid: bdc72ef485dff9c4dbebb622b2f3346d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdc72ef485dff9c4dbebb622b2f3346d, type: 3}
